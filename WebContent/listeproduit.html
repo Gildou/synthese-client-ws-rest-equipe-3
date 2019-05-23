@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+<title>LISTE PRODUITS</title>
+<body>
+
+
+	<!-- Black with white text -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<ul class="navbar-nav">
+			<li class="nav-item active"><a class="nav-link"
+				href="index.html">Index</a></li>
+			<li class="nav-item"><a class="nav-link"
+				href="listeproduit.html">Liste Produits</a></li>
+			<li class="nav-item"><a class="nav-link"
+				href="listemagasin.html">Liste Magasin</a></li>
+		</ul>
+	</nav>
+	
+	
+
+	<input type="button" value="Afficher les Produits"
+		onclick="chargerProduits()">
+	<div id="listInfos">
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>NOM</th>
+					<th>STOCK</th>
+					<th>PRIX</th>
+					<th>MAGASIN</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody">
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+</body>
+</html>
